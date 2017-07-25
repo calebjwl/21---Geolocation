@@ -65,6 +65,9 @@
     console.log(data);
     speed.textContent = Math.round(data.coords.speed);
     arrow.style.transform = `rotate(${data.coords.heading}deg)`;
+  }. (err) => {
+    console.err(err);
+    alert('Please refresh the website and allow access.');
   });
   </script>
 </body>
